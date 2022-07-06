@@ -1,3 +1,5 @@
+package get_requests;
+
 import io.restassured.response.Response;
 import org.junit.Assert;
 import org.junit.Test;
@@ -27,8 +29,8 @@ public class Get02 {
     @Test
     public void get01(){
 
-        //1. Step: Set theUrl
-        String url = "https://restful-booker.herokuapp.com/booking/1005";
+        //1. Step: Set the Url
+        String url = "https://restful-booker.herokuapp.com/booking/1";
 
         //2. Step: Set the expected data(Post - Put - Patch)
 
@@ -36,6 +38,7 @@ public class Get02 {
 
         Response response = given().when().get(url);
         response.prettyPrint();
+
         //4. Do Assertion
 
         response.then().assertThat().statusCode(404).statusLine("HTTP/1.1 404 Not Found");
@@ -51,6 +54,7 @@ public class Get02 {
 
         //assertEquals() methodu parantez içindeki iki değer eşit ise testi geçirir.
         assertEquals("Cowboy",response.header("Server"));
+
 
 
     }
