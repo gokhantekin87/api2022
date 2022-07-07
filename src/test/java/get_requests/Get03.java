@@ -71,7 +71,7 @@ public class Get03 extends JsonPlaceHolderBaseUrl {
 
          Not 2: Eğer kodumuzu hata noktasında duracak şekilde yazarsak "Hard Assertion" yapmış oluyoruz.
 
-         Not 3: Eğer kodumuzu hata noktasında duramayacak şekilde yazarsak "soft Assertion" yapmış oluyoruz.
+         Not 3: Eğer kodumuzu hata noktasında duramayacak şekilde yazarsak "Soft Assertion" yapmış oluyoruz.
 
          Not 4: Eğer çoklu body() methodu içinde assert yaparsak "Hard Assert",
                 tek body() methodu içinde assert yaparsak "Soft Assert"  yapmış oluyoruz.
