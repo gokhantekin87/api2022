@@ -25,11 +25,10 @@ public class Get05 extends HerOkuAppBaseUrl {
 
         //1. Step: Set the Url
 
-        //https://restful-booker.herokuapp.com/booking?firstname=Aaron&lastname=Chen
+        //https://restful-booker.herokuapp.com/booking?firstname=GGS&lastname=FINCH
         spec.pathParam("first","booking").
                 queryParams("firstname", "GGS",
                         "lastname", "FINCH");
-
 
         //2. Step: Set the expected data
 
@@ -41,7 +40,6 @@ public class Get05 extends HerOkuAppBaseUrl {
        //4. Step: Do Assertion
          response.then().assertThat().statusCode(200);
          assertTrue(response.asString().contains("bookingid"));
-
     }
 
 }
