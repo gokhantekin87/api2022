@@ -5,10 +5,8 @@ import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import org.junit.Test;
 import test_data.JsonPlaceHolderTestData;
-
 import java.util.HashMap;
 import java.util.Map;
-
 import static io.restassured.RestAssured.given;
 import static org.junit.Assert.assertEquals;
 
@@ -24,7 +22,7 @@ public class Post01 extends JsonPlaceHolderBaseUrl {
                  "userId": 55,
                  "title": "Tidy your room",
                  "completed": false
-              }
+                              }
         And
             response body is like {
                                     "userId": 55,
